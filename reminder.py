@@ -33,7 +33,7 @@ def run_scheduler():
         time.sleep(1)
 
 def create_thumbnail(): ##Create Stray app Icon 
-    image = Image.new("RGB", (64.64), "blue")
+    image = Image.new("RGB", (64,64), "blue")
     dc = ImageDraw.Draw(image)
     dc.ellipse((16,16,48,48), fill = "white")
     return image

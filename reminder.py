@@ -4,10 +4,12 @@ import time
 import tkinter as tk
 from tkinter import messagebox
 from PIL import Image, ImageDraw
+import winsound
 import pystray
 import schedule
 
 def show_reminder():
+    winsound.MessageBeep(winsound.MB_ICONASTERISK)
     root = tk.Tk()
     root.withdraw()
 

@@ -20,7 +20,7 @@ def show_reminder():
 
 def run_scheduler():
 
-    REMINDER_TIME = "8:58"
+    REMINDER_TIME = "8:57"
 
     schedule.every().monday.at(REMINDER_TIME).do(show_reminder)
     schedule.every().tuesday.at(REMINDER_TIME).do(show_reminder)
